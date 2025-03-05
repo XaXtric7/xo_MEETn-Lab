@@ -1,4 +1,6 @@
 // for type = 'module' or ES module...
+// Import & Export using Commonjs and ES module
+
 import { add, subtract } from "./func.js";
 import { a, b, c } from "./mymodule.js";
 
