@@ -76,8 +76,4 @@ node index.js
 - To build **mini-projects** and test features
 - To improve backend development skills
 
-Feel free to explore, contribute, and suggest improvements! 😊
-
 ---
-
-Let me know if you need any modifications! 🚀
