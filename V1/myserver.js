@@ -1,4 +1,6 @@
 // Further Reading: https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
+// Introduction to node.js and creating a server
+
 const http = require("node:http");
 
 const hostname = "127.0.0.1";
