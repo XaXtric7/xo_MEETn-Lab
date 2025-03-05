@@ -1,0 +1,19 @@
+{
+  "name": "testrun",
+  "version": "1.0.0",
+  "description": "this is the first run of node js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "testrun"
+  ],
+  "author": "sarthak",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "slugify": "^1.6.6"
+  }
+}
