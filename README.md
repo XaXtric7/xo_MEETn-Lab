@@ -18,7 +18,10 @@ This repository is dedicated to practicing and experimenting with **Node.js** co
 - **jsonwebtoken (JWT)** for authentication
 - **Nodemon** for development
 
-## 🔥 Getting Started
+## 🔥 Getting Started Documentations
+
+- [**Node.js docs**](https://nodejs.org/docs/latest/api/)
+- [**Express.js docs**](https://expressjs.com/)
 
 ### 1️⃣ Clone the repository
 
