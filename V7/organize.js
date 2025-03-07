@@ -55,3 +55,14 @@ function organizeFiles(dirPath) {
 
 // Call the function
 organizeFiles(directoryPath);
+
+//OUTPUT:
+// Moved: cat.jpg → testDir\jpg/
+// Moved: mahiru.zip → testDir\zip/
+// Moved: name.jpg → testDir\jpg/
+// Moved: name.png → testDir\png/
+// Moved: sarthak.pdf → testDir\pdf/
+// Moved: sarthak.zip → testDir\zip/
+// Moved: this.pdf → testDir\pdf/
+// ✅ Files organized successfully!
+// [nodemon] clean exit - waiting for changes before restart
