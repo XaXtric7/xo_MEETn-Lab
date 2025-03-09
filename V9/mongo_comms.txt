@@ -1,0 +1,42 @@
+/* 1. Basic Commands */
+show dbs         # List all databases
+use myDatabase   # Switch to (or create) a database
+db               # Show the current database
+show collections # List all collections in the current database
+
+/* 2. Insert Data */
+db.users.insertOne({ name: "Sarthak", age: 22, city: "Mumbai" })  # Insert one document
+db.users.insertMany([{ name: "Amish", age: 25 }, { name: "Neha", age: 23 }])  # Insert multiple documents
+
+/* 3. Find Data */
+db.users.find()            # Retrieve all documents
+db.users.findOne()         # Retrieve a single document
+db.users.find({ age: 22 }) # Find documents with age = 22
+db.users.find({}, { name: 1, _id: 0 }) # Show only the 'name' field, hide '_id'
+
+/* 4. Update Data */
+db.users.updateOne({ name: "Sarthak" }, { $set: { age: 23 } }) # Update one document
+db.users.updateMany({ city: "Mumbai" }, { $set: { country: "India" } }) # Update multiple documents
+
+/* 5. Delete Data */
+db.users.deleteOne({ name: "Sarthak" }) # Delete one document
+db.users.deleteMany({ age: { $lt: 25 } }) # Delete documents where age < 25
+
+/* 6. Aggregation */
+db.users.aggregate([
+  { $group: { _id: "$city", count: { $sum: 1 } } }
+]) # Group users by city and count them
+
+/* 7. Indexing for Performance */
+db.users.createIndex({ name: 1 }) # Create an index on the 'name' field
+db.users.getIndexes() # Show existing indexes
+
+/*/* BASIC STARTUP COMMS */*/
+
+use Mongo_V
+
+show collections
+
+db.v_1.find().pretty() //This will display all documents in the v_1 collection in a well-formatted manner.
+
+db.v_1.find({ _id: ObjectId("67cd34fc9c381d63806db1b2") }).pretty() //This retrieves the exact document with the given _id.
