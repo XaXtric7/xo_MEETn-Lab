@@ -1,3 +1,4 @@
+//Random Data Generator
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
